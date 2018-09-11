@@ -42,7 +42,8 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     //MARK:- UICollectionViewDelegate methods
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.item + 1)
+       
+        navigateToMenuScreen(with: indexPath.item)
     }
     
     //MARK:- UICollectionViewDelegateFlowLayout methods
