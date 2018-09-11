@@ -100,7 +100,7 @@ class HomeViewController: UIViewController, SJSegmentedViewControllerDelegate {
             
             self.navigationController?.pushViewController(segmentedViewController, animated: true)
             
-            self.perform(#selector(moveSegmentToIndex), with: nil, afterDelay: 0.2)
+            self.perform(#selector(moveSegmentToIndex), with: nil, afterDelay: 0.1)
         }
     }
     
@@ -112,13 +112,13 @@ class HomeViewController: UIViewController, SJSegmentedViewControllerDelegate {
     
     func didMoveToPage(_ controller: UIViewController, segment: SJSegmentTab?, index: Int) {
         
-        //self.segmentedViewController.reloadInputViews()
-
         if segmentedViewController.segments.count > 0 {
             
             let segmentTab = segmentedViewController.segments[index]
             segmentTab.titleColor(UIColor.black)
         }
+        
+        self.segmentedViewController.reloadInputViews()
     }
 }
 
