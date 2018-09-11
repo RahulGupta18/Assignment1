@@ -1,0 +1,165 @@
+{
+    "categories": [
+        {
+            "title": "Fusion Box",
+            "desc": "Our Signature 8 Layer Desi Meal, in a Box! An Amazing Fusion of Flavours. Super Convenient",
+            "imageHref": "https://assets.box8.co.in/picture_resolutions/photos/000/000/761/original/1110-x-810.jpg",
+            "products": [
+                {
+                    "name": "Dal Makhni Rice Box",
+                    "details": "Creamy Dal Makhni with Rice + Salad + Mint chutney + Garlic yogurt. The most satisfying meal ever!",
+                    "price": "₹ 148",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/001/212/original/1110-x-810.jpg"
+                },
+                {
+                    "name": "Chole Chawal Box",
+                    "details": "Authentic Amritsari chole with Rice + Salad + Mint chutney + Garlic yogurt",
+                    "price": "₹ 148",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/001/208/original/1110-x-810.jpg"
+                },
+                {
+                    "name": "Rajma Chawal Box",
+                    "details": "Really good Rajma served with Rice + Salad + Mint chutney + Garlic yogurt. Comfort meal at it's best!",
+                    "price": "₹ 148",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/001/216/original/1110-x-810.jpg"
+                },
+                {
+                    "name": "Grilled Tikki Box",
+                    "details": "Grilled veg patty with a spicy masala curry; Served with Rice + Salad + Mint chutney + Garlic yogurt",
+                    "price": "₹ 188",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/001/220/original/1110-x-810.jpg"
+                },
+                {
+                    "name": "Paneer Masala Box",
+                    "details": "Loads of creamy Paneer with a masaledaar curry; Served with Rice + Salad + Mint chutney + Garlic yogurt",
+                    "price": "₹ 198",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/001/224/original/1110-x-810.jpg"
+                }
+            ]
+        },
+        {
+            "title": "Curries",
+            "desc": "Our honest attempt to serve the most authentic Curries. Minus the excessive makhan :)",
+            "imageHref": "https://assets.box8.co.in/picture_resolutions/photos/000/000/404/original/1110-x-810-A.jpg",
+            "products": [
+                {
+                    "name": "Basmati Rice",
+                    "details": "Extra-long grain basmati rice steamed with mild & aromatic Desi herbs",
+                    "price": "₹ 98",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/000/466/original/1110-x-810.jpg"
+                },
+                {
+                    "name": "Tawa Paratha",
+                    "details": "Garma-garam soft whole wheat parathas made in Desi ghee",
+                    "price": "₹ 58",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/000/496/original/1110-X-810-.jpg"
+                },
+                {
+                    "name": "Kadhai Paneer",
+                    "details": "Soft paneer simmered in masala curry made with freshly ground spices",
+                    "price": "₹ 248",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/000/458/original/1110-x-810-A.jpg"
+                },
+                {
+                    "name": "Raita",
+                    "details": "Perfect way to complement your feast. Thick masala raita with notes of Cumin & fresh Mint",
+                    "price": "₹ 28",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/001/401/original/WB.jpg"
+                },
+                {
+                    "name": "Butter Chicken",
+                    "details": "Our version of an indulgent butter chicken curry. It's rich, creamy & NOT sweet. It's the real deal",
+                    "price": "₹ 298",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/000/461/original/1110-x-810.jpg"
+                }
+            ]
+        },
+        {
+            "title": "Biryani",
+            "desc": "A Traditional Dum Preparation. Extra-Long Grain Basmati Rice & Aromatic Whole Spices. Indulge in the Feast.",
+            "imageHref": "https://assets.box8.co.in/picture_resolutions/photos/000/000/401/original/1110-x-810.jpg",
+            "products": [
+                {
+                    "name": "Sahi Panner Biryani",
+                    "details": "Extra-long basmati rice cooked with loads of fire-grilled paneer tikkas & whole spices. Burst of flavours in every bite! Served with Raita",
+                    "price": "₹ 238",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/000/409/original/1110-X-810.jpg"
+                },
+                {
+                    "name": "Firangi Subz Biryani",
+                    "details": "Baby corn, Mushroom & Paneer cooked in biryani masala & layered over fragrant basmati rice. A mind blowing fusion! Served with Raita",
+                    "price": "₹ 208",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/000/408/original/1110-x-810-A.jpg"
+                },
+                {
+                    "name": "Chicken Tikka Biryani",
+                    "details": "Smoked Chicken-Tikka slow cooked with fragrant basmati rice & whole spices. A truly novel experience! Served with Raita",
+                    "price": "₹ 258",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/000/411/original/1110-x-810-A.jpg"
+                },
+                {
+                    "name": "Murg Dum Biryani",
+                    "details": "Succulent chicken (boneless) layered over aromatic super-long grain rice, slow cooked in quintessential dum style! Served with Raita",
+                    "price": "₹ 238",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/000/410/original/1110-x-810.jpg"
+                }
+            ]
+        },
+        {
+            "title": "Wraps",
+            "desc": "Whole Wheat (NOT Maida) Paratha Base, Stuffed with Delicious Fillings, Oven Baked (NOT fried)",
+            "imageHref": "https://assets.box8.co.in/picture_resolutions/photos/000/000/402/original/1110-x-810.jpg",
+            "products": [
+                {
+                    "name": "Paneer Wrap",
+                    "details": "Loads of grilled paneer & a mix of exotic veggies dripping in a spicy Desi sauce & Green chutney. Paneer wrap truly done better!",
+                    "price": "₹ 198",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/000/447/original/Paneer-Housefull-Wrap.jpg"
+                },
+                {
+                    "name": "Chicken Wrap",
+                    "details": "Fire roasted spicy chicken wrapped with Green chutney & Onions! Authentic Nawabi taste!",
+                    "price": "₹ 198",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/001/322/original/1110-X-810.jpg"
+                },
+                {
+                    "name": "Mayo Wrap",
+                    "details": "Loaded with Fire Grilled Chicken topped with a generous portion of Mayo & the perfect amount of crunchy veggies.",
+                    "price": "₹ 148",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/000/449/original/Chicken-Mayo-Wrap.jpg"
+                },
+                {
+                    "name": "Tikki Wrap",
+                    "details": "Crispy 'Grilled' veg tikki topped generously with mayo & exotic veggies & wrapped in a whole wheat paratha. Lip smacking!",
+                    "price": "₹ 88",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/000/441/original/Mayo-Tikki-Wrap.jpg"
+                },
+                {
+                    "name": "Patty Wrap",
+                    "details": "Oven Grilled all-veg patty with a flavourful tikka sauce wrapped with fresh veggies! Tantalize your Desi taste-buds!",
+                    "price": "₹ 148",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/000/443/original/Chatpata-Patty-Wrap.jpg"
+                }
+            ]
+        },
+        {
+            "title": "Ice Cream",
+            "desc": "Everything Natural- Seasonal Fruits | Rich Dry Fruits | Premium Chocolate | In 500 ml Tub",
+            "imageHref": "https://assets.box8.co.in/picture_resolutions/photos/000/000/698/original/1110-x-810.jpg",
+            "products": [
+                {
+                    "name": "Tender CocoNut",
+                    "details": "Chunks of fresh tender coconut pieces slow churned into a subtly flavoured creamy wonder. A coastal dream!",
+                    "price": "₹ 219",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/001/462/original/1110-X-810.jpg"
+                },
+                {
+                    "name": "Sheer Khurma",
+                    "details": "The quintessential Ramadan feast now in an ice-cream- A Desi fusion never seen before.",
+                    "price": "₹ 219",
+                    "imageUrl": "https://assets.box8.co.in/picture_resolutions/photos/000/000/860/original/1110-X-810.jpg"
+                }
+            ]
+        }
+    ]
+}
