@@ -17,6 +17,9 @@
 		D16FDDE121470EA900452B22 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16FDDE021470EA900452B22 /* Category.swift */; };
 		D16FDDE321470FDD00452B22 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16FDDE221470FDD00452B22 /* Product.swift */; };
 		D16FDDE52147143800452B22 /* FoodMenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16FDDE42147143800452B22 /* FoodMenuData.swift */; };
+		D1AE97EF214803E800205B85 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE97EE214803E800205B85 /* Parser.swift */; };
+		D1AE97F1214803F700205B85 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE97F0214803F700205B85 /* Constants.swift */; };
+		D1AE97F3214809EA00205B85 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE97F2214809EA00205B85 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		D16FDDE021470EA900452B22 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		D16FDDE221470FDD00452B22 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		D16FDDE42147143800452B22 /* FoodMenuData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMenuData.swift; sourceTree = "<group>"; };
+		D1AE97EE214803E800205B85 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		D1AE97F0214803F700205B85 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D1AE97F2214809EA00205B85 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +93,11 @@
 			isa = PBXGroup;
 			children = (
 				D16FDDDE21470E4100452B22 /* Models */,
+				D1AE97EA2148039C00205B85 /* Views */,
 				D16FDDDF21470E4C00452B22 /* Controllers */,
-				D16FDDCE214702BC00452B22 /* Main.storyboard */,
-				D16FDDD3214702BC00452B22 /* LaunchScreen.storyboard */,
 				D16FDDD1214702BC00452B22 /* Assets.xcassets */,
-				D16FDDDC21470C7900452B22 /* box8_stub.json */,
+				D1AE97ED214803C600205B85 /* Utility */,
+				D1AE97EB214803AC00205B85 /* Stub */,
 				D16FDDD6214702BC00452B22 /* Info.plist */,
 			);
 			path = Assignment1;
@@ -114,6 +120,33 @@
 				D16FDDCC214702BC00452B22 /* HomeViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D1AE97EA2148039C00205B85 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D16FDDCE214702BC00452B22 /* Main.storyboard */,
+				D16FDDD3214702BC00452B22 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D1AE97EB214803AC00205B85 /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				D16FDDDC21470C7900452B22 /* box8_stub.json */,
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
+		D1AE97ED214803C600205B85 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D1AE97EE214803E800205B85 /* Parser.swift */,
+				D1AE97F2214809EA00205B85 /* Utility.swift */,
+				D1AE97F0214803F700205B85 /* Constants.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,15 +225,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Assignment1/Pods-Assignment1-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
@@ -214,15 +243,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Assignment1-checkManifestLockResult.txt",
 			);
@@ -240,7 +265,10 @@
 			files = (
 				D16FDDCD214702BC00452B22 /* HomeViewController.swift in Sources */,
 				D16FDDE52147143800452B22 /* FoodMenuData.swift in Sources */,
+				D1AE97EF214803E800205B85 /* Parser.swift in Sources */,
 				D16FDDE321470FDD00452B22 /* Product.swift in Sources */,
+				D1AE97F3214809EA00205B85 /* Utility.swift in Sources */,
+				D1AE97F1214803F700205B85 /* Constants.swift in Sources */,
 				D16FDDCB214702BC00452B22 /* AppDelegate.swift in Sources */,
 				D16FDDE121470EA900452B22 /* Category.swift in Sources */,
 			);

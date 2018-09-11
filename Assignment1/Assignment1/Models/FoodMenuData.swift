@@ -10,12 +10,17 @@ import Foundation
 
 struct FoodMenuData: Decodable {
     
-    let headers: [String]
-    let categories: [Category]
+    var headers: [String]
+    var categories: [Category]
     
     private enum CodingKeys: String, CodingKey {
         case headers
         case categories
+    }
+    
+    init() {
+        headers = []
+        categories = []
     }
     
     init(from decoder: Decoder) throws  {

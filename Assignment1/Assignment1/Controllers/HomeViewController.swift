@@ -10,11 +10,17 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    var menuData: FoodMenuData = FoodMenuData()
+
+    @IBOutlet weak var clviwHome: UICollectionView!
+    
+    // MARK: View Lifecycle Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        parseJsonData()
+        setHomeScreen()
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,22 +28,23 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: Methods
     
-    func parseJsonData() {
+    func setHomeScreen() {
         
-        do {
-            let path = Bundle.main.path(forResource: "box8_stub", ofType: "json")
-            
-            let fileContent = try NSString(contentsOfFile: path!, encoding: String.Encoding.ascii.rawValue)
-            let encodedString = fileContent.data(using: String.Encoding.utf8.rawValue)! as Data
-            let parsedData = try JSONDecoder().decode(FoodMenuData.self, from: encodedString)
-            print(parsedData.categories.count)
-            
-        } catch let error {
-            
-            print(error)
+        clviwHome.dataSource = self
+        clviwHome.delegate = self
+    
+        // Get data from stub file
+        Parser.parseStubData(onSuccess: { (parsedData) in
+            if let foodData  = parsedData {
+                menuData = foodData
+                
+                clviwHome.reloadData()
+            }
+        }) { (err) in
+            Utility.showAlert(title: Constants.ALERT_ERROR_TITLE, message: err.localizedDescription, buttonText: Constants.ALERT_OK, viewController: self)
         }
     }
-
 }
 
