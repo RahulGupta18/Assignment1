@@ -10,14 +10,17 @@ import Foundation
 
 struct FoodMenuData: Decodable {
     
+    let headers: [String]
     let categories: [Category]
     
     private enum CodingKeys: String, CodingKey {
+        case headers
         case categories
     }
     
     init(from decoder: Decoder) throws  {
         let values = try decoder.container(keyedBy: CodingKeys.self)
+        headers = try values.decodeIfPresent([String].self, forKey: .headers) ?? []
         categories = try values.decodeIfPresent([Category].self, forKey: .categories) ?? []
     }
 }

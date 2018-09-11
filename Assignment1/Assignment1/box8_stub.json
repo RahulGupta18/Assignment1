@@ -1,4 +1,12 @@
 {
+    "headers": [
+                "https://assets.box8.co.in/picture_resolutions/photos/000/003/001/original/1425X500_%281%29.jpg",
+                "https://assets.box8.co.in/picture_resolutions/photos/000/003/175/original/Web-Banner.jpg",
+                "https://assets.box8.co.in/picture_resolutions/photos/000/001/474/original/monsoon-web-banner.jpg",
+                "https://assets.box8.co.in/picture_resolutions/photos/000/002/658/original/1425X500.jpg",
+                "https://assets.box8.co.in/picture_resolutions/photos/000/002/968/original/Biryani-web.jpg"
+                ],
+    
     "categories": [
         {
             "title": "Fusion Box",

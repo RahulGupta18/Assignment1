@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        testJSONParsing()
+        parseJsonData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
     }
     
     
-    func testJSONParsing() {
+    func parseJsonData() {
         
         do {
             let path = Bundle.main.path(forResource: "box8_stub", ofType: "json")
