@@ -20,6 +20,9 @@
 		D1AE97EF214803E800205B85 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE97EE214803E800205B85 /* Parser.swift */; };
 		D1AE97F1214803F700205B85 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE97F0214803F700205B85 /* Constants.swift */; };
 		D1AE97F3214809EA00205B85 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE97F2214809EA00205B85 /* Utility.swift */; };
+		D1AE97F921483FF200205B85 /* HomeViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE97F821483FF200205B85 /* HomeViewController+CollectionView.swift */; };
+		D1AE97FB2148406300205B85 /* HomeViewController+Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE97FA2148406300205B85 /* HomeViewController+Carousel.swift */; };
+		D1AE97FD2148408600205B85 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE97FC2148408600205B85 /* CollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		D1AE97EE214803E800205B85 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		D1AE97F0214803F700205B85 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D1AE97F2214809EA00205B85 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		D1AE97F821483FF200205B85 /* HomeViewController+CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		D1AE97FA2148406300205B85 /* HomeViewController+Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Carousel.swift"; sourceTree = "<group>"; };
+		D1AE97FC2148408600205B85 /* CollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				D16FDDCA214702BC00452B22 /* AppDelegate.swift */,
-				D16FDDCC214702BC00452B22 /* HomeViewController.swift */,
+				D1AE97FF21484AAC00205B85 /* HomeView */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 		D1AE97EA2148039C00205B85 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D1AE97FC2148408600205B85 /* CollectionCell.swift */,
 				D16FDDCE214702BC00452B22 /* Main.storyboard */,
 				D16FDDD3214702BC00452B22 /* LaunchScreen.storyboard */,
 			);
@@ -147,6 +154,16 @@
 				D1AE97F0214803F700205B85 /* Constants.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		D1AE97FF21484AAC00205B85 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				D16FDDCC214702BC00452B22 /* HomeViewController.swift */,
+				D1AE97F821483FF200205B85 /* HomeViewController+CollectionView.swift */,
+				D1AE97FA2148406300205B85 /* HomeViewController+Carousel.swift */,
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,10 +245,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Assignment1/Pods-Assignment1-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/iCarousel/iCarousel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iCarousel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -264,12 +283,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D16FDDCD214702BC00452B22 /* HomeViewController.swift in Sources */,
+				D1AE97F921483FF200205B85 /* HomeViewController+CollectionView.swift in Sources */,
 				D16FDDE52147143800452B22 /* FoodMenuData.swift in Sources */,
+				D1AE97FB2148406300205B85 /* HomeViewController+Carousel.swift in Sources */,
 				D1AE97EF214803E800205B85 /* Parser.swift in Sources */,
 				D16FDDE321470FDD00452B22 /* Product.swift in Sources */,
 				D1AE97F3214809EA00205B85 /* Utility.swift in Sources */,
 				D1AE97F1214803F700205B85 /* Constants.swift in Sources */,
 				D16FDDCB214702BC00452B22 /* AppDelegate.swift in Sources */,
+				D1AE97FD2148408600205B85 /* CollectionCell.swift in Sources */,
 				D16FDDE121470EA900452B22 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

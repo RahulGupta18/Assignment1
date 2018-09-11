@@ -1,18 +1,22 @@
 PODS:
+  - iCarousel (1.8.3)
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
 
 DEPENDENCIES:
+  - iCarousel
   - SDWebImage (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - iCarousel
     - SDWebImage
 
 SPEC CHECKSUMS:
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
 
-PODFILE CHECKSUM: 831d65aada603f82bf0cad169f9f548b5661c75b
+PODFILE CHECKSUM: 4e1565b2a438210a724bbddf23a6c7e2ab6559b0
 
 COCOAPODS: 1.5.3

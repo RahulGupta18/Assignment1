@@ -7,5 +7,6 @@ target 'Assignment1' do
 
   # Pods for Assignment1
 pod 'SDWebImage', '~> 4.0'
+pod 'iCarousel'
 
 end

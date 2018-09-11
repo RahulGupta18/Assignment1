@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E64202FC060228838A3135F5769676BC"
-               BlueprintName = "SDWebImage"
+               BlueprintIdentifier = "AF838A0B37B24EEAE208B36E664527B2"
+               BlueprintName = "iCarousel"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SDWebImage.framework">
+               BuildableName = "iCarousel.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import SDWebImage
 
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
@@ -77,13 +76,15 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         }
         
         let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeader", for: indexPath)
-        
+        carouselView.frame = view.bounds
+        view.addSubview(carouselView)
+    
         return view
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         
-        return CGSize(width: collectionView.bounds.size.width, height: collectionView.bounds.size.height * 0.3)
+        return CGSize(width: collectionView.bounds.size.width, height: collectionView.bounds.size.width * 0.35)
 
     }
 }
