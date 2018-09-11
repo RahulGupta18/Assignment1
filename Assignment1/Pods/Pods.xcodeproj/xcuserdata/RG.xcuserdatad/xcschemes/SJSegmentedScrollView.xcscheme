@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "280B52E1002FE615EB6429CDC79C88EF"
-               BlueprintName = "SDWebImage"
+               BlueprintIdentifier = "99CA74C2E3AE2C238BA4E01A9796F4FE"
+               BlueprintName = "SJSegmentedScrollView"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SDWebImage.framework">
+               BuildableName = "SJSegmentedScrollView.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
