@@ -41,6 +41,8 @@ class HomeViewController: UIViewController, SJSegmentedViewControllerDelegate {
     
     func setHomeScreen() {
         
+        self.title = "Box8"
+        
         carouselView = iCarousel(frame: CGRect(x: 0, y: 0, width: clviwHome.bounds.size.width, height: clviwHome.bounds.size.width * 0.35))
         carouselView.type = .linear
         carouselView.isPagingEnabled = true

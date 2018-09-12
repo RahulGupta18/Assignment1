@@ -12,8 +12,8 @@ import UIKit
 
 class Constants {
     
-    static let NAVIGATIONBAR_TINT_COLOUR: UIColor = UIColor(red: 232.0/255.0, green: 0.0/255.0, blue: 26.0/255.0, alpha: 1.0)
-    static let NAVIGATIONBAR_BARTINT_COLOUR: UIColor = UIColor.white
+    static let NAVIGATIONBAR_BARTINT_COLOUR: UIColor = UIColor(red: 232.0/255.0, green: 0.0/255.0, blue: 26.0/255.0, alpha: 1.0)
+    static let NAVIGATIONBAR_TINT_COLOUR: UIColor = UIColor.white
     static let NAVIGATIONBAR_TITLE_COLOUR: UIColor = UIColor.white
 
     static let ALERT_OK = "OK"

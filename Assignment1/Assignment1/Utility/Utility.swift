@@ -18,4 +18,16 @@ class Utility {
         viewController.present(alert, animated: true, completion: nil)
     }
     
+    
+    static func setNavigationBarAppearance() {
+        
+        let navigationBarAppearace = UINavigationBar.appearance()
+        
+        navigationBarAppearace.tintColor = Constants.NAVIGATIONBAR_TINT_COLOUR
+        
+        navigationBarAppearace.barTintColor = Constants.NAVIGATIONBAR_BARTINT_COLOUR
+        
+        // change navigation item title color
+        navigationBarAppearace.titleTextAttributes = [NSAttributedStringKey.foregroundColor: Constants.NAVIGATIONBAR_TITLE_COLOUR]
+    }
 }
