@@ -21,9 +21,9 @@ class Constants {
     
     static let COLLECTION_VIEW_INTERI_ITEM_SPACING: CGFloat = 4.0
     static let COLLECTION_VIEW_LINE_SPACING: CGFloat = 4.0
-    static let COLLECTION_VIEW_INSET_TOP: CGFloat = 32.0
+    static let COLLECTION_VIEW_INSET_TOP: CGFloat = 8.0
     static let COLLECTION_VIEW_INSET_LEFT: CGFloat = 4.0
-    static let COLLECTION_VIEW_INSET_BOTTOM: CGFloat = 20.0
+    static let COLLECTION_VIEW_INSET_BOTTOM: CGFloat = 8.0
     static let COLLECTION_VIEW_INSET_RIGHT: CGFloat = 4.0
 
 }

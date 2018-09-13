@@ -27,7 +27,6 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as! CollectionCell
         
-        
         cell.imgCategory.startAnimating()
 
         cell.lblCategoryTitle.text = category.title
@@ -76,16 +75,21 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             return UICollectionReusableView()
         }
         
-        let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeader", for: indexPath)
-        carouselView.frame = view.bounds
-        view.addSubview(carouselView)
-    
-        return view
+        let viwHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeader", for: indexPath) as! CollectionHeader
+        
+        viwHeader.setHeader()
+        
+        viwHeader.carouselView.delegate = self
+        viwHeader.carouselView.dataSource = self
+        viwHeader.carouselView.reloadData()
+        
+        viwHeader.pageControl.numberOfPages = menuData.headers.count
+        
+        return viwHeader
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         
-        return CGSize(width: collectionView.bounds.size.width, height: collectionView.bounds.size.width * 0.35)
-
+        return CGSize(width: collectionView.bounds.size.width, height: (collectionView.bounds.size.width * 0.35) + 37)
     }
 }

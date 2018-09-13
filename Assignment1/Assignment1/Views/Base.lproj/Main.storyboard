@@ -33,13 +33,13 @@
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="bmM-GA-OJt">
                                     <size key="itemSize" width="180" height="200"/>
-                                    <size key="headerReferenceSize" width="50" height="199"/>
+                                    <size key="headerReferenceSize" width="50" height="169"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell" id="vgK-Fp-h45" customClass="CollectionCell" customModule="Assignment1" customModuleProvider="target">
-                                        <rect key="frame" x="5" y="204" width="180" height="200"/>
+                                        <rect key="frame" x="5" y="174" width="180" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="180" height="200"/>
@@ -83,22 +83,76 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="SectionHeader" id="S9h-Nz-ugB">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="SectionHeader" id="S9h-Nz-ugB" customClass="CollectionHeader" customModule="Assignment1" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uh2-uL-TQj" userLabel="Carousel View" customClass="iCarousel">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYS-Vg-Vab" userLabel="CarouselView" customClass="iCarousel">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="131.5"/>
+                                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" secondItem="jYS-Vg-Vab" secondAttribute="width" multiplier="0.35" id="YJv-gr-YcG"/>
+                                            </constraints>
                                         </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4n-Tp-GAi" userLabel="LeftArrow">
+                                            <rect key="frame" x="16" y="42" width="24" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="24" id="CB7-Ae-U8S"/>
+                                                <constraint firstAttribute="height" constant="48" id="TOh-Wy-tLP"/>
+                                            </constraints>
+                                            <size key="titleShadowOffset" width="2" height="2"/>
+                                            <state key="normal" image="arrow_left">
+                                                <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnLeftArrowTouched:" destination="S9h-Nz-ugB" eventType="touchUpInside" id="XX8-DO-kSL"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTL-N6-zLn" userLabel="RightArrow">
+                                            <rect key="frame" x="335" y="42" width="24" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="EgN-nA-Cbi"/>
+                                                <constraint firstAttribute="width" constant="24" id="vEG-XF-fB5"/>
+                                            </constraints>
+                                            <size key="titleShadowOffset" width="2" height="2"/>
+                                            <state key="normal" image="arrow_right">
+                                                <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnRightArrowTouched:" destination="S9h-Nz-ugB" eventType="touchUpInside" id="Z0Z-wz-uAt"/>
+                                            </connections>
+                                        </button>
+                                        <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="2gh-vD-Tkn" userLabel="PageControl">
+                                            <rect key="frame" x="0.0" y="131.5" width="375" height="37"/>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="37" id="oiV-MP-f9k"/>
+                                            </constraints>
+                                            <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="currentPageIndicatorTintColor" red="0.90980392160000001" green="0.0" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                        </pageControl>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="uh2-uL-TQj" secondAttribute="trailing" id="KEo-wG-Am3"/>
-                                        <constraint firstAttribute="bottom" secondItem="uh2-uL-TQj" secondAttribute="bottom" id="LGJ-Vc-5T7"/>
-                                        <constraint firstItem="uh2-uL-TQj" firstAttribute="top" secondItem="S9h-Nz-ugB" secondAttribute="top" id="mzg-6y-DzY"/>
-                                        <constraint firstItem="uh2-uL-TQj" firstAttribute="leading" secondItem="S9h-Nz-ugB" secondAttribute="leading" id="v2a-Fh-6t0"/>
+                                        <constraint firstItem="mTL-N6-zLn" firstAttribute="centerY" secondItem="jYS-Vg-Vab" secondAttribute="centerY" id="8UO-G5-9Gd"/>
+                                        <constraint firstItem="jYS-Vg-Vab" firstAttribute="leading" secondItem="S9h-Nz-ugB" secondAttribute="leading" id="ELq-HR-iDY"/>
+                                        <constraint firstAttribute="trailing" secondItem="mTL-N6-zLn" secondAttribute="trailing" constant="16" id="R0a-ef-SiM"/>
+                                        <constraint firstAttribute="trailing" secondItem="jYS-Vg-Vab" secondAttribute="trailing" id="Sdr-qJ-53p"/>
+                                        <constraint firstItem="jYS-Vg-Vab" firstAttribute="top" secondItem="S9h-Nz-ugB" secondAttribute="top" id="SiF-iU-P1G"/>
+                                        <constraint firstItem="r4n-Tp-GAi" firstAttribute="centerY" secondItem="jYS-Vg-Vab" secondAttribute="centerY" id="UZC-GB-w87"/>
+                                        <constraint firstItem="r4n-Tp-GAi" firstAttribute="leading" secondItem="S9h-Nz-ugB" secondAttribute="leading" constant="16" id="bnn-IV-F0u"/>
+                                        <constraint firstAttribute="bottom" secondItem="2gh-vD-Tkn" secondAttribute="bottom" id="ffw-2C-hSg"/>
+                                        <constraint firstAttribute="trailing" secondItem="jYS-Vg-Vab" secondAttribute="trailing" id="grg-41-7yt"/>
+                                        <constraint firstItem="2gh-vD-Tkn" firstAttribute="leading" secondItem="S9h-Nz-ugB" secondAttribute="leading" id="iGq-QD-9hS"/>
+                                        <constraint firstAttribute="trailing" secondItem="2gh-vD-Tkn" secondAttribute="trailing" id="l1M-oT-QEi"/>
+                                        <constraint firstItem="jYS-Vg-Vab" firstAttribute="leading" secondItem="S9h-Nz-ugB" secondAttribute="leading" id="qeZ-Db-Ltf"/>
                                     </constraints>
+                                    <connections>
+                                        <outlet property="btnLeftArrow" destination="r4n-Tp-GAi" id="wig-dZ-jWK"/>
+                                        <outlet property="btnRightArrow" destination="mTL-N6-zLn" id="z95-93-08T"/>
+                                        <outlet property="carouselView" destination="jYS-Vg-Vab" id="yQ3-LZ-PbM"/>
+                                        <outlet property="pageControl" destination="2gh-vD-Tkn" id="ts5-b6-gpK"/>
+                                    </connections>
                                 </collectionReusableView>
                             </collectionView>
                         </subviews>
@@ -118,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-249" y="116"/>
+            <point key="canvasLocation" x="-250.40000000000001" y="115.59220389805098"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vjm-24-Fyr">
@@ -266,4 +320,8 @@
             <point key="canvasLocation" x="-1114.4000000000001" y="808.24587706146929"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow_left" width="12" height="24"/>
+        <image name="arrow_right" width="12" height="24"/>
+    </resources>
 </document>

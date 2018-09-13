@@ -26,6 +26,7 @@
 		D1AE9802214854EE00205B85 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE9801214854EE00205B85 /* MenuViewController.swift */; };
 		D1AE980421485A6D00205B85 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE980321485A6D00205B85 /* MenuCell.swift */; };
 		D1AE980621485BDF00205B85 /* MenuViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE980521485BDF00205B85 /* MenuViewController+TableView.swift */; };
+		D1AE9808214ADAB500205B85 /* CollectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE9807214ADAB500205B85 /* CollectionHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		D1AE9801214854EE00205B85 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		D1AE980321485A6D00205B85 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		D1AE980521485BDF00205B85 /* MenuViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+TableView.swift"; sourceTree = "<group>"; };
+		D1AE9807214ADAB500205B85 /* CollectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				D1AE97FC2148408600205B85 /* CollectionCell.swift */,
+				D1AE9807214ADAB500205B85 /* CollectionHeader.swift */,
 				D1AE980321485A6D00205B85 /* MenuCell.swift */,
 				D16FDDCE214702BC00452B22 /* Main.storyboard */,
 				D16FDDD3214702BC00452B22 /* LaunchScreen.storyboard */,
@@ -310,6 +313,7 @@
 				D16FDDE321470FDD00452B22 /* Product.swift in Sources */,
 				D1AE97F3214809EA00205B85 /* Utility.swift in Sources */,
 				D1AE9802214854EE00205B85 /* MenuViewController.swift in Sources */,
+				D1AE9808214ADAB500205B85 /* CollectionHeader.swift in Sources */,
 				D1AE97F1214803F700205B85 /* Constants.swift in Sources */,
 				D16FDDCB214702BC00452B22 /* AppDelegate.swift in Sources */,
 				D1AE97FD2148408600205B85 /* CollectionCell.swift in Sources */,
