@@ -10,13 +10,16 @@ import Foundation
 import UIKit
 import iCarousel
 
-class CollectionHeader: UICollectionReusableView {
+class CollectionHeader: UICollectionReusableView, iCarouselDelegate {
     
     @IBOutlet weak var carouselView: iCarousel!
     @IBOutlet weak var btnLeftArrow: UIButton!
     @IBOutlet weak var btnRightArrow: UIButton!
     @IBOutlet weak var pageControl: UIPageControl!
 
+    let currentItemIndexObserver = "currentItemIndex"
+    var observation: NSKeyValueObservation?
+    
     func setHeader() {
         
         btnLeftArrow.layer.shadowColor = UIColor.black.cgColor
@@ -33,6 +36,14 @@ class CollectionHeader: UICollectionReusableView {
         carouselView.isPagingEnabled = true
         carouselView.bounces = false
         
+        carouselView.delegate = self
+        
+        pageControl.currentPage = carouselView.currentItemIndex
+    }
+    
+    // MARK: iCarouselDelegate Methods
+    
+    func carouselCurrentItemIndexDidChange(_ carousel: iCarousel) {
         pageControl.currentPage = carouselView.currentItemIndex
     }
     

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import iCarousel
 
-extension HomeViewController: iCarouselDelegate, iCarouselDataSource {
+extension HomeViewController: iCarouselDataSource {
     
     //MARK:- iCarouselDataSource Methods
     

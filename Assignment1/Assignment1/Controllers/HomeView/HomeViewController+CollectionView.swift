@@ -79,7 +79,6 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         
         viwHeader.setHeader()
         
-        viwHeader.carouselView.delegate = self
         viwHeader.carouselView.dataSource = self
         viwHeader.carouselView.reloadData()
         
