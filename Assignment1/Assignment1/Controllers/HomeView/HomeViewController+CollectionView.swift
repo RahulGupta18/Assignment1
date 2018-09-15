@@ -27,13 +27,11 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as! CollectionCell
         
-        cell.imgCategory.startAnimating()
-
+        cell.imgCategory.sd_setShowActivityIndicatorView(true)
+        cell.imgCategory.sd_setIndicatorStyle(.white)
         cell.lblCategoryTitle.text = category.title
 
-        cell.imgCategory.sd_setImage(with: URL(string: category.imageHref)) { (img, error, cacheType, url) in
-            cell.imgCategory.stopAnimating()
-        }
+        cell.imgCategory.sd_setImage(with: URL(string: category.imageHref)) { (img, error, cacheType, url) in}
         
         return cell
     }

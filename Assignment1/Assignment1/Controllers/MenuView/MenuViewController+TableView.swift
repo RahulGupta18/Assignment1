@@ -27,10 +27,9 @@ extension MenuViewController: UITableViewDataSource, UITableViewDelegate {
         let product = products[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCell", for: indexPath) as! MenuCell
         
-        cell.imgProduct.startAnimating()
-        cell.imgProduct.sd_setImage(with: URL(string: product.imageUrl), completed: { (img, err, cacheType, url) in
-            cell.imageView?.stopAnimating()
-        })
+        cell.imgProduct.sd_setShowActivityIndicatorView(true)
+        cell.imgProduct.sd_setIndicatorStyle(.white)
+        cell.imgProduct.sd_setImage(with: URL(string: product.imageUrl), completed: { (img, err, cacheType, url) in})
         
         cell.lblProductName.text = product.name
         cell.lblProductDetails.text = product.details

@@ -33,10 +33,9 @@ extension HomeViewController: iCarouselDataSource {
             itemView.contentMode = .scaleAspectFit
         }
         
-        itemView.startAnimating()
-        itemView.sd_setImage(with: URL(string: menuData.headers[index]), completed: { (img, err, cacheType, url) in
-            itemView.stopAnimating()
-        })
+        itemView.sd_setShowActivityIndicatorView(true)
+        itemView.sd_setIndicatorStyle(.white)
+        itemView.sd_setImage(with: URL(string: menuData.headers[index]), completed: { (img, err, cacheType, url) in})
         
         return itemView
     }
